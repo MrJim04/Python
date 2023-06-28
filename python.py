@@ -83,12 +83,66 @@ while i <= 5_000:
     print(i)
     i = i + 1
 
-print("Git")
+i = 1
+while i <= 10:
+    print(i * '*')
+    i = i + 1
 
+names = ['Jimwell', 'Jim', 'Jimz', 'Mr. Jim']
+print(name)
+print(names[0])
+print(names[-1])
+print(names[-2])
+print(names[-3])
 
+names[0] = 'Jimwell Ibay'
+print(names)
+print(names[0:2])
 
+numbers = [1,2,4,5,6,7,8,9]
+numbers.append(10)
+print(numbers)
 
+numbers.insert(3, 'Insert')
+print(numbers)
 
+numbers.remove('Insert')
+print(numbers)
 
+print('Insert' in numbers)
 
+print(len(numbers))
+
+numbers.clear()
+print(numbers)
+
+numbers = [1,2,3,4,5]
+
+for number in numbers:
+    print(number)
+
+i = 0
+while i < len(numbers):
+    print(numbers[i])
+    i = i + 1
+
+numbers = range(5)
+for number in numbers:
+    print(number)
+
+numbers = range(5, 9)
+for number in numbers:
+    print(number)
+
+numbers = range(5, 20, 2)
+for number in numbers:
+    print(number)
+
+for number in range(5):
+    print(number)
+
+numbers = (1, 2, 3, 4, 5, 3)
+# numbers[0] = 3 # ERROR
+
+print(numbers.count(3))
 
