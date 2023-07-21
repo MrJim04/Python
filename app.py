@@ -203,5 +203,46 @@ for item in ['Jimz', 'Jim', 'Jimwell', 'Ibay', 'Jimwell Ibay']:
 for item in [1, 2, 3, 4, 5, 6]:
     print(item)
 
+for item in range(10):
+    print(item)
+    
+for item in range(5, 10):
+    print(item)
 
+for item in range(5, 10, 2):
+    print(item)
+    
+prices = [10, 30, 50]
+total = 0
+for price in prices:
+    print(f'${price}')
+    total += price
+print(f'Total: ${total}')
 
+for x in range(4):
+    for y in range(3):
+        print(f'({x},{y})')
+        
+numbers = [5, 2, 5, 2, 2]
+f = '\n'
+for number in numbers:
+    for x in range(number):
+        f += 'x'
+    f += '\n'
+print(f)
+
+for number in numbers:
+    f = ''
+    for x in range(number):
+        f += 'x'
+    print(f)
+    
+numbers = [2, 2, 2, 2, 5]
+
+print('\n')
+
+for number in numbers:
+    l = ''
+    for x in range(number):
+        l += 'x'
+    print(l)
