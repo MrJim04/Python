@@ -258,3 +258,86 @@ print(names[:2])
 names[0] = 'John'
 print(names)
 
+matrix = [
+    [1, 2, 3],
+    [4, 5, 6],
+    [7, 8, 9]
+]
+
+print(matrix)
+print(matrix[0])
+print(matrix[0][2])
+
+matrix[0][1] = 36
+print(matrix)
+
+for row in matrix:
+    for item in row:
+        print(item)
+    print('\n')
+
+numbers = [1, 2, 3, 4, 5, 6, 8, 6, 9, 10]
+numbers2 = numbers.copy()
+
+numbers.append(11)
+print(numbers)
+
+numbers.insert(0,0)
+print(numbers)
+
+numbers.pop()
+print(numbers)
+
+print(numbers.index(9))
+print(3 in numbers)
+print(numbers.count(6))
+print(numbers.sort())
+
+numbers.reverse()
+print(numbers)
+
+numbers.sort()
+print(numbers)
+
+numbers.clear()
+print(numbers)
+
+print(numbers2)
+
+numbers = [2, 4, 4, 2, 6, 7, 3, 3, 4, 3, 7, 9, 6, 8, 4, 3, 2, 1]
+uniques = []
+
+for number in numbers:
+    if number not in uniques:
+        uniques.append(number)
+print(uniques)
+
+numbers = (1, 2, 3, 4, 5, 6, 7, 8, 9)
+print(numbers.count(2))
+print(numbers.index(4))
+
+coordinates = (234, 455, 199)
+x, y, z = coordinates
+print(x)
+print(y)
+print(z)
+
+customer = {
+    'name': 'Jimwell Ibay',
+    'age': 18,
+    'email': 'ibayjimwell@gmail.com',
+    'verified': True
+}
+
+print(customer['name'], customer['email'])
+print(customer.get('age'))
+print(customer.get('birthday', 'January 4, 2005'))
+
+customer['age'] = 19
+print(customer['age'])
+
+message = 'Good morning have a nice day'
+messageSplit = message.split()
+print(messageSplit)
+
+
