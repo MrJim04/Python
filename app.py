@@ -340,4 +340,32 @@ message = 'Good morning have a nice day'
 messageSplit = message.split()
 print(messageSplit)
 
+def greet_user(user):
+    print(f'Hi {user}')
+    print('Welcome aboard')
+
+def greet_two_user(user1, user2):
+    print(f'Hi {user1} and {user2}')
+    print("Welcome aboard")
+
+greet_user('Jim')
+greet_user('Kylie')
+
+greet_two_user('Jim', 'Scarlet')
+greet_two_user(user2 = 'Jim', user1 = 'Scarlet')
+greet_two_user('Scarlet', user2 = 'Jim')
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
