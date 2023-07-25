@@ -71,3 +71,16 @@ digits_maping = {
 for num in phone:
     digits += ' ' + digits_maping.get(num, '#')
 print(digits)
+
+age = int(input('Age: '))
+print(age)
+
+try:
+    age = int(input('Age: '))
+    income = 20000
+    risk = income / age
+    print(age);
+except ZeroDivisionError:
+    print('Age cannot be zero')
+except ValueError:
+    print('Invalid value')

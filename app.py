@@ -355,17 +355,51 @@ greet_two_user('Jim', 'Scarlet')
 greet_two_user(user2 = 'Jim', user1 = 'Scarlet')
 greet_two_user('Scarlet', user2 = 'Jim')
 
+def square(number):
+    return number * number
+
+result = square(7)
+print(result)
+
+class Point:
+
+    def move(self):
+        print('move')
+
+    def draw(self):
+        print('draw')
 
 
+point1 = Point()
+point1.draw()
+point1.move()
+point1.x = 34
+point1.y = 56
+print(point1.x, point1.y)
 
+class Point2:
 
+    def __init__(self, x, y):
+        self.x = x
+        self.y = y
 
+    def move(self):
+        print('move')
 
+    def draw(self):
+        print('draw')
 
+point2 = Point2(34, 64)
+print(point2.x)
+print(point2.y)
 
+class Person:
 
+    def __init__(self, name):
+        self.name = name
 
+    def talk(self):
+        print(f'Hello my name is {self.name}')
 
-
-
-
+person1 = Person('Jimwell')
+person1.talk()
