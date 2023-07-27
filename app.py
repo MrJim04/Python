@@ -403,3 +403,69 @@ class Person:
 
 person1 = Person('Jimwell')
 person1.talk()
+
+class Mammal:
+    def walk(self):
+        print('Walk')
+
+class Dog(Mammal):
+    def bark(self):
+        print('Bark')
+
+class Cat(Mammal):
+    pass
+
+dog1 = Dog()
+cat1 = Cat()
+dog1.walk()
+cat1.walk()
+dog1.bark()
+
+import converters
+
+convert = converters.Convert(53476)
+print(convert.Kgs())
+print(convert.Lbs())
+
+from converters import Convert
+convert = Convert(8475)
+print(convert.Kgs())
+print(convert.Lbs())
+
+from utils import max
+
+numbers = [23,447,275,3,403,954,3635,246,3,4,43,45,45,453]
+print(max(numbers))
+
+from ecommerce.shipping import calc_shipping
+
+calc_shipping()
+
+import random
+
+for i in range(3):
+    print(random.random())
+    print(random.randint(5, 10))
+    print(random.choice(numbers))
+
+
+from dice import Dice
+
+dice = Dice()
+for i in range(5):
+    print(dice.roll())
+
+
+from pathlib import Path
+
+path = Path('emails')
+print(path.exists())
+
+if not path.exists():
+    path.mkdir()
+else:
+    path.rmdir()
+
+print(path.glob('*'))
+for file in path.glob('*'):
+    print(file)

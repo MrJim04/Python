@@ -21,18 +21,6 @@ name = input('What is your name? ')
 favourite_color = input('What is your favourite color? ')
 print(name + ' likes ' + favourite_color)
 
-weight = float(input("Weight: "))
-unit = input("(K)g or (L)bs: ")
-
-if unit.upper() == "K":
-    converted = weight * 0.45
-    print("Weight in Kgs: " + str(converted))
-elif unit.upper() == "L":
-    converted = weight / 0.45
-    print("Weight in Lbs: " + str(converted))
-else:
-    print("Invalid")
-
 username = input('Username: ')
 if len(username) < 3:
     print('Username must be at least 3 character')
